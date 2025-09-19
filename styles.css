@@ -1,0 +1,114 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background: #222;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #0077cc;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.section.alt {
+  background: #f1f1f1;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-grid {
+    flex-direction: column;
+  }
+
+  .project-card {
+    flex: 1 1 100%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
