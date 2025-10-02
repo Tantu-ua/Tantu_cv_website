@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujm/WdhJ/A/Q0WwN0nO+G6Fw2E+0q1uG1e5zP3M6Z6e3bE/f1+Q6qG/6K/r6X1g/p5Zz2hF2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -22,6 +23,7 @@
   <nav class="navbar">
     <div class="container">
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
@@ -30,20 +32,46 @@
 
   <main>
     <section id="about" class="section">
-      <div class="container about-content"> <img src="profile.jpg" alt="Tantu Mandal Profile" class="profile-photo"> <div>
+      <div class="container about-content">
+        <img src="profile.jpg" alt="Tantu Mandal Profile" class="profile-photo">
+        <div>
           <h2 class="section-title">About Me</h2>
           <p>Hi, I’m Tantu Mandal, a Ph.D. student at the University of Alabama. My research focuses on the study of river channels using remote sensing techniques. I’m particularly interested in understanding how river systems evolve over time and how geospatial technologies like satellite imagery and GIS can help monitor and analyze these dynamic environments. Through my work, I aim to contribute to the broader understanding of fluvial processes and support sustainable river management.</p>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section alt">
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+          <div class="education-item">
+            <h3>Ph.D. in Geography and the Environment</h3>
+            <p class="education-details"><a href="https://www.ua.edu/" target="_blank">The University of Alabama</a> | 2024 - Present</p>
+          </div>
+          <div class="education-item">
+            <h3>M.Tech in Agricultural Systems and Management</h3>
+            <p class="education-details"><a href="https://www.iitkgp.ac.in/" target="_blank">Indian Institute of Technology Kharagpur</a> | 2022 - 2024</p>
+          </div>
+          <div class="education-item">
+            <h3>B.Tech in Agricultural Engineering</h3>
+            <p class="education-details"><a href="https://www.bckv.edu.in/index.php/en/" target="_blank">Bidhan Chandra Krishi Viswavidyalaya</a> | 2019 - 2022</p>
+          </div>
+          <div class="education-item">
+            <h3>Diploma in Agricultural Engineering</h3>
+            <p class="education-details"><a href="https://polytechnic.wbtetsd.gov.in/mitberhampore" target="_blank">Murshidabad Institute of Technology, West Bengal</a> | 2016 - 2019</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
       <div class="container">
         <h2 class="section-title">Experience</h2>
         <div class="experience-grid">
           <div class="experience-item">
             <h3>Graduate Research Assistant</h3>
-            <p class="experience-details">The University of Alabama | August 2024 - Present</p>
+            <p class="experience-details"><a href="https://www.ua.edu/" target="_blank">The University of Alabama</a> | August 2024 - Present</p>
             <ul>
               <li>Conducting research on river channel dynamics using satellite imagery and GIS.</li>
               <li>Assisting in data analysis and preparation of research publications.</li>
@@ -51,14 +79,15 @@
           </div>
           <div class="experience-item">
             <h3>Teaching Assistant</h3>
-            <p class="experience-details">Indian Institute of Technology Kharagpur | May 2024 - July 2024</p>
+            <p class="experience-details"><a href="https://www.iitkgp.ac.in/" target="_blank">Indian Institute of Technology Kharagpur</a> | May 2024 - July 2024</p>
             <ul>
               <li>Led lab sessions and graded assignments for undergraduate engineering courses.</li>
+              <li>Provided academic support to students during office hours.</li>
             </ul>
           </div>
           <div class="experience-item">
             <h3>Summer Intern</h3>
-            <p class="experience-details">International Crops Research Institute for the Semi-Arid Tropics | May 2023 - June 2023</p>
+            <p class="experience-details"><a href="https://www.icrisat.org/" target="_blank">International Crops Research Institute for the Semi-Arid Tropics</a> | May 2023 - June 2023</p>
             <ul>
               <li>Worked on a project involving geospatial data for agricultural monitoring.</li>
               <li>Analyzed crop health using remote sensing data.</li>
@@ -68,7 +97,7 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section alt">
       <div class="container">
         <h2 class="section-title">Projects</h2>
         <div class="project-grid">
@@ -105,12 +134,14 @@
       </div>
     </section>
 
-    <section id="contact" class="section alt">
+    <section id="contact" class="section">
       <div class="container contact-container">
         <h2 class="section-title">Get In Touch</h2>
         <p>I'm always open to discussing new research, projects, or collaboration opportunities.</p>
-        <a href="mailto:tmandal@crimson.ua.edu" class="btn">Email Me</a>
-        <a href="https://in.linkedin.com/in/tantu-mandal-00426b258" class="btn" target="_blank">Connect on LinkedIn</a>
+        <div class="contact-icons">
+          <a href="mailto:tmandal@crimson.ua.edu" class="contact-icon-link" aria-label="Email me"><i class="fas fa-envelope fa-2x"></i></a>
+          <a href="https://in.linkedin.com/in/tantu-mandal-00426b258" class="contact-icon-link" target="_blank" aria-label="Connect on LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
       </div>
     </section>
   </main>
