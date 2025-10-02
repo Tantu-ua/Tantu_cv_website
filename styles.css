@@ -49,8 +49,8 @@ body {
 
 /* Adjust title alignment for about section when image is present */
 .about-content .section-title {
-    text-align: left; /* Align title to left inside about-content */
-    margin-top: 0; /* Remove top margin if needed */
+    text-align: left;
+    margin-top: 0;
     margin-bottom: 25px;
 }
 
@@ -109,29 +109,31 @@ body {
 /* --- ABOUT SECTION WITH PHOTO --- */
 .about-content {
     display: flex;
-    flex-direction: column; /* Stack image and text by default */
-    align-items: center; /* Center items horizontally */
-    gap: 30px; /* Space between image and text */
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .profile-photo {
-    width: 200px; /* Adjust size as needed */
+    width: 200px;
     height: 200px;
-    border-radius: 50%; /* Makes it circular */
-    object-fit: cover; /* Ensures image covers the area nicely */
-    border: 5px solid var(--secondary-color); /* A nice border */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
-    margin-bottom: 20px; /* Space below photo before text */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
 }
 
 
-/* --- EXPERIENCE SECTION --- */
+/* --- EDUCATION & EXPERIENCE SECTIONS --- */
+.education-grid,
 .experience-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 }
 
+.education-item,
 .experience-item {
   background: var(--white-color);
   padding: 25px;
@@ -140,17 +142,39 @@ body {
   box-shadow: var(--shadow);
 }
 
+.education-item h3,
 .experience-item h3 {
   font-size: 22px;
   color: var(--primary-color);
   margin-bottom: 5px;
 }
 
+.education-details,
 .experience-details {
   font-weight: 500;
   color: #555;
   margin-bottom: 15px;
 }
+
+.education-details {
+  margin-bottom: 0;
+}
+
+/* --- Styling for institution hyperlinks --- */
+.education-details a,
+.experience-details a {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.education-details a:hover,
+.experience-details a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 
 .experience-item ul {
   list-style-position: inside;
@@ -209,7 +233,7 @@ body {
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: 500;
-  margin-top: auto; /* Pushes link to the bottom of the card */
+  margin-top: auto;
   transition: color 0.3s ease;
 }
 
@@ -222,21 +246,23 @@ body {
   text-align: center;
 }
 
-.btn {
-  display: inline-block;
-  background: var(--secondary-color);
-  color: var(--white-color);
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 500;
-  margin: 20px 10px 0 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+/* New styles for contact icons */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Space between icons */
+  margin-top: 30px;
 }
 
-.btn:hover {
-  background: var(--primary-color);
-  transform: translateY(-2px);
+.contact-icon-link {
+  color: var(--secondary-color);
+  font-size: 2.5em; /* Adjust size of icons */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-icon-link:hover {
+  color: var(--primary-color);
+  transform: translateY(-5px);
 }
 
 .footer {
@@ -250,17 +276,17 @@ body {
 /* --- RESPONSIVE DESIGN --- */
 @media (min-width: 769px) {
     .about-content {
-        flex-direction: row; /* Side-by-side on larger screens */
+        flex-direction: row;
         text-align: left;
-        align-items: flex-start; /* Align items to the top */
+        align-items: flex-start;
     }
 
     .profile-photo {
-        margin-right: 40px; /* Space to the right of the photo */
-        margin-bottom: 0; /* Remove bottom margin on larger screens */
+        margin-right: 40px;
+        margin-bottom: 0;
     }
     .about-content .section-title {
-        text-align: left; /* Ensure title is left-aligned on larger screens too */
+        text-align: left;
     }
 }
 
@@ -286,6 +312,9 @@ body {
     margin-bottom: 25px;
   }
   .about-content .section-title {
-      text-align: center; /* Center title on smaller screens */
+      text-align: center;
+  }
+  .contact-icon-link {
+    font-size: 2em; /* Smaller icons on mobile */
   }
 }
